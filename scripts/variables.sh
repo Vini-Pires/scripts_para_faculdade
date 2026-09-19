@@ -18,12 +18,11 @@ export _KEYS_DEFAULT="$HOME/.ssh"
 
 # URLs da Fonte Fira Code (Para o Editor)
 export _FONT_URL=(
-
-	# Fira Code
-	"https://github.com/tonsky/FiraCode/raw/master/distr/ttf/FiraCode-Regular.ttf"
-	"https://github.com/tonsky/FiraCode/raw/master/distr/ttf/FiraCode-Bold.ttf"
-	"https://github.com/tonsky/FiraCode/raw/master/distr/ttf/FiraCode-Medium.ttf"
-	"https://github.com/tonsky/FiraCode/raw/master/distr/ttf/FiraCode-Retina.ttf"
+	# Fira Code (Fixado na tag 5.2 para baixar os .ttf diretamente)
+  "https://raw.githubusercontent.com/tonsky/FiraCode/5.2/distr/ttf/FiraCode-Regular.ttf"
+  "https://raw.githubusercontent.com/tonsky/FiraCode/5.2/distr/ttf/FiraCode-Bold.ttf"
+  "https://raw.githubusercontent.com/tonsky/FiraCode/5.2/distr/ttf/FiraCode-Medium.ttf"
+  "https://raw.githubusercontent.com/tonsky/FiraCode/5.2/distr/ttf/FiraCode-Retina.ttf"
 )
 export _PASTA_FONT="$HOME/.local/share/fonts"
 

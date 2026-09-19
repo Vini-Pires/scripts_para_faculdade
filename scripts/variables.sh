@@ -15,7 +15,6 @@ export _REGISTRO_ALUNO="$(whoami)"
 export _HOME_MEDIA="/media/$_REGISTRO_ALUNO/home"
 export _KEYS_CUSTOM="$_HOME_MEDIA/configs/ssh"
 export _KEYS_DEFAULT="$HOME/.ssh"
-export _VSCODE_DEFAULT="$HOME/.config/Code/User"
 export ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
 
 # URLs da MesloLGS NF (Para o Terminal) e Fira Code (Para o Editor)

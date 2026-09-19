@@ -1,6 +1,9 @@
 #!/bin/bash
 
-. scripts/variables.sh
+# 1. Descobre o diretório absoluto de onde ESTE script (setup.sh) está salvo, independente de onde o seu terminal esteja aberto no momento.
+BASE_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+. "$BASE_DIR/scripts/variables.sh"
 
 # Verificar condições de existencia
 # . $_PASTA_SCRIPTS/verify_RA.sh || exit 1

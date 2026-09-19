@@ -1,11 +1,14 @@
 #!/bin/bash
 
+# Descobre automaticamente a pasta raiz do repositório (um nível acima de 'scripts')
+BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
 # Não pode ter espaços entre o sinal de igual (=)
 export TESTE="RODANDO"
 
-export _PASTA_SCRIPTS=$(pwd)/scripts
-export _PASTA_CONFIGS=$(pwd)/configs
-export _VSCODE=$_PASTA_CONFIGS/vscode
+export _PASTA_SCRIPTS="$BASE_DIR/scripts"
+export _PASTA_CONFIGS="$BASE_DIR/configs"
+export _VSCODE="$_PASTA_CONFIGS/vscode"
 
 export _GIT_CONFIG="git config --global"
 export NOME_GIT="Vinicius Pires | UTFPR"

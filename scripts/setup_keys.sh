@@ -21,10 +21,3 @@ chmod 644 "$_KEYS_DEFAULT"/*.pub 2>/dev/null
 chmod 644 "$_KEYS_DEFAULT"/know* 2>/dev/null
 
 echo "Chaves copiadas e permissões configuradas com sucesso para $_KEYS_DEFAULT"
-
-ARGS_CHAVES=""
-for arquivo in "$_KEYS_DEFAULT"/*; do
-  if [ -f "$arquivo" ] && [[ "$arquivo" != *.pub ]] && [[ "$arquivo" != *know* ]] && [[ "$arquivo" != *config* ]]; then
-    ARGS_CHAVES="$ARGS_CHAVES -i $arquivo"
-  fi
-done

@@ -10,7 +10,6 @@ $_GIT_CONFIG pull.rebase false # Usara merge para lidar com conflitos
 
 $_GIT_CONFIG core.editor "nano"
 $_GIT_CONFIG core.autocrlf input
-$_GIT_CONFIG core.sshCommand "ssh $ARGS_CHAVES -o IdentitiesOnly=yes"
 
 $_GIT_CONFIG alias.st status
 $_GIT_CONFIG alias.sw switch

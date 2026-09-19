@@ -82,7 +82,7 @@
       "icon": "terminal-powershell"
     }
   },
-  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.defaultProfile.linux": "bash",
   "terminal.integrated.initialHint": false,
 	"terminal.integrated.fontFamily": "MesloLGS NF",
 

@@ -15,15 +15,9 @@ export _REGISTRO_ALUNO="$(whoami)"
 export _HOME_MEDIA="/media/$_REGISTRO_ALUNO/home"
 export _KEYS_CUSTOM="$_HOME_MEDIA/configs/ssh"
 export _KEYS_DEFAULT="$HOME/.ssh"
-export ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
 
-# URLs da MesloLGS NF (Para o Terminal) e Fira Code (Para o Editor)
+# URLs da Fonte Fira Code (Para o Editor)
 export _FONT_URL=(
-	# MesloLGS NF
-	"https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf"
-	"https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf"
-	"https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf"
-	"https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf"
 
 	# Fira Code
 	"https://github.com/tonsky/FiraCode/raw/master/distr/ttf/FiraCode-Regular.ttf"

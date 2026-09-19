@@ -14,7 +14,6 @@ echo "[ 1 ] Configurar Chaves SSH"
 echo "[ 2 ] Configurar Git"
 echo "[ 3 ] Configurar VSCodium/VSCode"
 echo "[ 4 ] Instalar Fontes (Fira Code/Meslo)"
-echo "[ 5 ] Instalar e Configurar Zsh"
 echo "[ T ] Executar TUDO"
 echo "[ 0 ] Sair"
 echo "========================================="
@@ -46,17 +45,12 @@ for OPCAO in $ESCOLHAS; do
       echo "▶ Executando: Instalação de Fontes..."
       . "$_PASTA_SCRIPTS/install_fonts.sh"
       ;;
-    5)
-      echo "▶ Executando: Configuração do Zsh..."
-      . "$_PASTA_SCRIPTS/install_zsh.sh"
-      ;;
     T|t)
       echo "▶ Executando: TODAS as etapas..."
       . "$_PASTA_SCRIPTS/setup_keys.sh"
       . "$_PASTA_SCRIPTS/setup_git.sh"
       . "$_PASTA_SCRIPTS/setup_vscode.sh"
       . "$_PASTA_SCRIPTS/install_fonts.sh"
-      . "$_PASTA_SCRIPTS/install_zsh.sh"
       # O break interrompe o loop para não executar opções repetidas caso você digite "T 2 4"
       break
       ;;
